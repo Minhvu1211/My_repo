@@ -1,11 +1,7 @@
 void main() {
-   List <int> numbers = [10,20,30,40,50];
-   numbers.addAll ([60,70]);
-   numbers.removeAt(0);
-   print (numbers);
-   int sum = 0;
-   for (int num in numbers) {
-    sum += num;
-  }
-   print ("Tong cua cac so la: $sum");  
+   List <String> tenHocSinh = ["Vu","Ngoc","Hoang","Phong","Kien"];
+   tenHocSinh.insert (0, "Tuyen"); //chèn vào vị trí số 0
+   print(tenHocSinh);
+  tenHocSinh.removeWhere ((name) => name.length <4); //xoá đi những tên thoả mãn điều kiện
+  print("Những tên có nhiều hơn 4 kí tự là: ${tenHocSinh}");
 }
