@@ -1,5 +1,11 @@
 void main() {
-  double cellcious = 20;
-  var fahrenheit = (cellcious*1.8) + 32;
-  print ("${cellcious} độ C bằng ${fahrenheit}  F");
+   List <int> numbers = [10,20,30,40,50];
+   numbers.addAll ([60,70]);
+   numbers.removeAt(0);
+   print (numbers);
+   int sum = 0;
+   for (int num in numbers) {
+    sum += num;
+  }
+   print ("Tong cua cac so la: $sum");  
 }
